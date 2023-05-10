@@ -95,4 +95,31 @@ Now we are going to create our VM. Open virtual machine manager and create a new
 Go through the setup by selecting a local install media and going forward. Then browse for the Windows 10 ISO file in your computer.
 
 Continue through the setup until the last page where it asks for the name. Make sure the name is win10 and select the box that says ```Customize configuation before install```
-![Screenshot from 2023-05-09 22-45-58](https://github.com/emoney17/single-gpu-passthrough/assets/122418017/bbcdc47b-a896-4f34-8f0c-2c183af9e449)
+![Screenshot from 2023-05-09 22-45-58](https://github.com/emoney17/single-gpu-passthrough/assets/122418017/c90b85f5-6b03-4db8-9cdd-dbebb6faa166)
+
+In the overview section, make sure to select the Q35 Chipset and UEFI Firmware.
+![Screenshot from 2023-05-09 22-59-10](https://github.com/emoney17/single-gpu-passthrough/assets/122418017/9f4e5101-64e6-4b55-860f-643c1c575150)
+
+Next go to the cpu section and in the Configuration section uncheck ```host-passthrough``` and look for ```host-model``` After doing some research it seems the Ryzen 5 CPU we have requires us to do this, otherwise we get a windows blue screen every time we boot the virtual machine.
+![Screenshot from 2023-05-09 23-07-26](https://github.com/emoney17/single-gpu-passthrough/assets/122418017/74a7f941-d257-4f39-8d10-46e34f022995)
+
+You can now check the cpu and memory sections and modify them as you see fit.
+
+Once you get to the boot options, we want to change the boot order so that the ISO comes first
+![Screenshot from 2023-05-09 22-57-43](https://github.com/emoney17/single-gpu-passthrough/assets/122418017/c61ea83e-e6a2-4fc2-867b-5cefba8e8b73)
+
+Then hit the ```Add Hardware``` button at the bottom left because we are going to add another rom so that we can download some drivers.
+
+First go to https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/archive-virtio/virtio-win-0.1.215-2/ 
+
+Then donwload the ```virtio-win.iso```
+
+Now after pressing add hardware add a new storage device and make it a cd rom
+![Screenshot from 2023-05-09 23-00-24](https://github.com/emoney17/single-gpu-passthrough/assets/122418017/0ccdae4d-459b-412b-b4e0-968157a728e2)
+
+After that go to the now named SATA CDROM 2 and browse for the virtio-win.iso you downloaded on your computer.
+
+**BEFORE YOU PROCEED MAKE SURE ALL SETTINGS HAVE ACTUALLY BEEN APPLIED**
+
+You should now be able to start the vm and begin the windows installation process!
+![Screenshot from 2023-05-09 23-13-28](https://github.com/emoney17/single-gpu-passthrough/assets/122418017/93d75f8f-5511-46cc-978f-484e5a8dd4b7)
