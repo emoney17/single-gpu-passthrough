@@ -1,4 +1,4 @@
-# Single Gpu Passthrough guide AMD
+# single GPU passthrough guide AMD
 ### Info
 - OS Ubuntu
 - AMD Radeon RX 580
