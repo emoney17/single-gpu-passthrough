@@ -6,11 +6,12 @@
 - 16GB RAM
 
 ## Part 1 BIOS Config
-Make sure virtualization is enabled in your BIOS.
+Before starting, make sure your BIOS is up to date.
+Then make sure virtualization is enabled in your BIOS.
 - IOMMU Enabled
 - SVM Enabled
 
-Also make sure to update your system before starting anything.
+Also make sure to update your system.
 
 ## Part 2 GRUB Loader
 Edit the grub config file with ```sudo vim /etc/default/grub```
@@ -119,7 +120,7 @@ Now after pressing add hardware add a new storage device and make it a cd rom
 
 After that go to the now named SATA CDROM 2 and browse for the virtio-win.iso you downloaded on your computer.
 
-**BEFORE YOU PROCEED MAKE SURE ALL SETTINGS HAVE ACTUALLY BEEN APPLIED**
 
+**BEFORE YOU PROCEED MAKE SURE ALL SETTINGS HAVE ACTUALLY BEEN APPLIED**
 You should now be able to start the vm and begin the windows installation process!
 ![Screenshot from 2023-05-09 23-13-28](https://github.com/emoney17/single-gpu-passthrough/assets/122418017/93d75f8f-5511-46cc-978f-484e5a8dd4b7)
