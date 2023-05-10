@@ -93,6 +93,9 @@ sudo usermod -a -G kvm $(whoami)
 sudo usermod -a -G libvirt $(whoami)
 ```
 
+After completing this part, logout and log back int to make sure everything is ready for the vm.
+
+
 ## Part 7 Create the VM
 Now we are going to create our VM. Open virtual machine manager and create a new virtual machine.
 
