@@ -28,6 +28,7 @@ And change it to:
 ```GRUB_CMDLINE_LINUX_DEFAULT="amd_iommu=on iommu=pt iommu=1 video=efifb:off quiet splash"```
 
 Then update the changes with ```sudo update-grub```
+- For Arch ```sudo grub-mkconfig -o /boot/grub2/grub.cfg```
 
 Reboot the PC and check that the grub loader is working properly with ```sudo cat /proc/cmdline```
 
@@ -53,8 +54,10 @@ Remember the address we got **08:00.0** and **08:00.1**
 
 ## Part 4 Virtualization Software
 Now we install all the software needed for virtualization. Since we are on Ubuntu use the following command.
-
+### Deb
 ```sudo apt install qemu-kvm libvirt-clients libvirt-daemon-system bridge-utils virt-manager ovmf```
+### Arch
+```sudo pacman -S virt-manager qemu vde2 ebtables iptables-nft nftables dnsmasq bridge-utils ovmf```
 
 ## Part 5 Configure Libvirt
 After that we have to update the libvirt config with ```sudo vim /etc/libvirt/libvirtd.conf```
