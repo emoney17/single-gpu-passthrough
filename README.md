@@ -124,7 +124,7 @@ After that go to the now named SATA CDROM 2 and browse for the virtio-win.iso yo
 
 
 **BEFORE YOU PROCEED MAKE SURE ALL SETTINGS HAVE ACTUALLY BEEN APPLIED**
-You should now be able to start the vm and begin the windows installation process!
+You should now be able to start the vm and begin the windows installation process! (Use windows 10 Pro for less hassle)
 ![Screenshot from 2023-05-09 23-13-28](https://github.com/emoney17/single-gpu-passthrough/assets/122418017/93d75f8f-5511-46cc-978f-484e5a8dd4b7)
 
 Once the install is finished, make sure to remove the cd rom from the boot order in the settings since we wont need it anymore.
