@@ -1,5 +1,5 @@
 # single GPU passthrough guide AMD
-### Info
+### Tested on
 - OS Ubuntu
 - AMD Radeon RX 580
 - AMD Ryzen 5 1600 (12)
