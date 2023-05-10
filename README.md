@@ -7,6 +7,7 @@
 
 ## Part 1 BIOS Config
 **Before starting, make sure your BIOS is up to date.**
+
 I ran into a lot of problems setting this up and most of them were fixed by updating...
 
 Then make sure virtualization is enabled in your BIOS.
@@ -130,7 +131,9 @@ After that go to the now named SATA CDROM 2 and browse for the virtio-win.iso yo
 
 **BEFORE YOU PROCEED MAKE SURE ALL SETTINGS HAVE ACTUALLY BEEN APPLIED**
 
-You should now be able to start the vm and begin the windows installation process! (Use windows 10 Pro for less hassle)
+You should now be able to start the vm and begin the windows installation process! 
+
+(Use windows 10 Pro for less hassle)
 
 ![Screenshot from 2023-05-09 23-13-28](https://github.com/emoney17/single-gpu-passthrough/assets/122418017/93d75f8f-5511-46cc-978f-484e5a8dd4b7)
 
@@ -212,4 +215,6 @@ If you are using a AMD Ryzen 5 1600 like me, you need to go into the vm's cpu se
 
 Not sure if it is a compatabiltiy issue but it instantly let me boot into the windows installer after changing this.
 ### Black screen on starting vm
-I was getting this error constantly the first time I added the gpu to my vm. After a lot of forum searching I decided to update my BIOS from my motherboard manufacturer's site and after trying it actually boot into windows first try, so try that.
+I was getting this error constantly the first time I added the gpu to my vm. 
+
+After a lot of forum searching I decided to update my BIOS from my motherboard manufacturer's site and after trying it actually boot into windows first try, so try that.
