@@ -6,7 +6,9 @@
 - 16GB RAM
 
 ## Part 1 BIOS Config
-Before starting, make sure your BIOS is up to date.
+**Before starting, make sure your BIOS is up to date.**
+I ran into a lot of problems setting this up and most of them were fixed by updating...
+
 Then make sure virtualization is enabled in your BIOS.
 - IOMMU Enabled
 - SVM Enabled
@@ -124,3 +126,8 @@ After that go to the now named SATA CDROM 2 and browse for the virtio-win.iso yo
 **BEFORE YOU PROCEED MAKE SURE ALL SETTINGS HAVE ACTUALLY BEEN APPLIED**
 You should now be able to start the vm and begin the windows installation process!
 ![Screenshot from 2023-05-09 23-13-28](https://github.com/emoney17/single-gpu-passthrough/assets/122418017/93d75f8f-5511-46cc-978f-484e5a8dd4b7)
+
+Once the install is finished, make sure to remove the cd rom from the boot order in the settings since we wont need it anymore.
+![Screenshot from 2023-05-09 23-20-46](https://github.com/emoney17/single-gpu-passthrough/assets/122418017/521fc541-6cf0-4e99-9d5d-f69cb819eb0b)
+
+After removing it start up the vm again and you should load into windows 10 startup.
