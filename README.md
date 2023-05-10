@@ -140,7 +140,7 @@ You should now be able to start the vm and begin the windows installation proces
 
 ![Screenshot from 2023-05-09 23-13-28](https://github.com/emoney17/single-gpu-passthrough/assets/122418017/93d75f8f-5511-46cc-978f-484e5a8dd4b7)
 
-Once the install is finished, make sure to remove the cd rom from the boot order in the settings since we wont need it anymore.
+**Once the install is finished, make sure to remove the cd rom from the boot order in the settings since we wont need it anymore.**
 
 ![Screenshot from 2023-05-09 23-20-46](https://github.com/emoney17/single-gpu-passthrough/assets/122418017/521fc541-6cf0-4e99-9d5d-f69cb819eb0b)
 
