@@ -95,3 +95,4 @@ Now we are going to create our VM. Open virtual machine manager and create a new
 Go through the setup by selecting a local install media and going forward. Then browse for the Windows 10 ISO file in your computer.
 
 Continue through the setup until the last page where it asks for the name. Make sure the name is win10 and select the box that says ```Customize configuation before install```
+![Screenshot from 2023-05-09 22-45-58](https://github.com/emoney17/single-gpu-passthrough/assets/122418017/bbcdc47b-a896-4f34-8f0c-2c183af9e449)
