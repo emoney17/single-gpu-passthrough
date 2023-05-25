@@ -221,7 +221,7 @@ After getting into windows I advise you to install the gpu drivers from your man
 When shutting down the vm, after a bit the vm should eventually send you back to your linux display managers login screen.
 
 ## Currently known problems
-### VM Exist black screen
+### VM Exits to black screen
 So far getting into the vm is working and I've done it multiple times on different deb based systems but every single one had a problem with the exit hook executing.
 
 When exiting the vm, at the point where the exit hook should send us back to our linux login manager, it just displays nothing and the screen stays black
@@ -229,7 +229,7 @@ When exiting the vm, at the point where the exit hook should send us back to our
 Currently still trying to find the culprit of this since everything before exiting works flawlessly.
 
 ## Troubleshooting
-### Windows blue screen crashing on vm boot
+### Windows blue screen crash on vm boot
 If you are using a AMD Ryzen 5 1600 like me, you need to go into the vm's cpu settings and uncheck 
 
 ```copy host CPU configuration (host-passthrough)``` and select ```host-model```
