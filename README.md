@@ -139,8 +139,15 @@ Now after pressing add hardware add a new storage device and make it a cd rom
 
 ![Screenshot from 2023-05-09 23-00-24](https://github.com/emoney17/single-gpu-passthrough/assets/122418017/0ccdae4d-459b-412b-b4e0-968157a728e2)
 
-After that go to the now named SATA CDROM 2 and browse for the virtio-win.iso you downloaded on your computer.
+After that go to the now named SATA CDROM 2 and browse for the ```virtio-win.iso``` you downloaded on your computer.
 
+In addition to this, we need to make sure the network is configured correctly in the VM before we start using it.
+
+In the VM settings go to the NIC tab from the left, which is the configuration for the Virutal Network Interface.
+
+Here change the Device model to ```virtio```
+
+![image](https://github.com/emoney17/single-gpu-passthrough/assets/122418017/cd40e6e7-11db-4a8f-96d8-1d201e616bf8)
 
 **BEFORE YOU PROCEED MAKE SURE ALL SETTINGS HAVE ACTUALLY BEEN APPLIED**
 
